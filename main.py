@@ -39,3 +39,26 @@ rand1=random.rand(10) # gen 10 random numbers random form if not arg only one
 rand_matrix =random.rand(3,4) #array of (3,4) random
 print(rand_n)
 print(random.choice(rand_n))
+
+#using axis to sum row and columns
+axe_sum0 = rand_matrix.sum(axis=0) #1 for row and 0 for column
+print(axe_sum0)
+axe_sum1 = rand_matrix.sum(axis=1)
+print(axe_sum1)
+
+#more mathmatical functions w array
+sqrt = np.sqrt(rand_matrix)
+print(sqrt)
+std = np.std(rand_matrix) #standard deviation
+print(std)
+
+#all other sum div mul sub are as std
+
+#Stacking  
+s1 =random.randint(0,10,size=(3,3))
+s2 =random.randint(0,10,size=(3,3))
+print("--------I am are here now---------")
+print(s1)
+print(s2)
+print(np.vstack((s1,s2)))
+print(np.hstack((s1,s2)))
